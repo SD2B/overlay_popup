@@ -1,10 +1,10 @@
 name: overlay_popup
 description: "A customizable popup that can be called on the widget of your choice."
 version: 0.0.1
-homepage:
+homepage: https://github.com/SD2B/overlay_popup.git
 
 environment:
-  sdk: '>=3.3.4 <4.0.0'
+  sdk: ">=3.3.4 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
