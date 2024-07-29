@@ -1,4 +1,4 @@
-## Overlay popup
+## Overlay Popup
 "A widget that allows you to display a popup anywhere on the screen, particularly on any widget of your choice, except for widgets that have onPress or onTap features."
 
 ## Features
