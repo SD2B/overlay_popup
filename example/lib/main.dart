@@ -36,120 +36,122 @@ class OverlayPopupExample extends StatelessWidget {
           const SizedBox(height: 20),
           const Text('Click the Widgets below to show the overlay popup'),
           const SizedBox(height: 20),
-          // OverlayPopup on Icon
+
+          // OverlayPopup with an Icon as trigger
           OverlayPopup(
             content: (closeOverlay) => Container(
-              padding: const EdgeInsets.all(20),
-              color: Colors.white,
+              padding: const EdgeInsets.all(20), // Adds padding to the popup content
+              color: Colors.white, // Background color of the popup
               child: Column(
                 children: [
                   const Text('This is an overlay popup'),
                   const SizedBox(height: 20),
                   ElevatedButton(
-                    onPressed: closeOverlay,
+                    onPressed: closeOverlay, // Closes the popup when pressed
                     child: const Text('Close'),
                   ),
                 ],
               ),
             ),
-            horizontalPadding: 0, // to align with the widget horizontally
-            verticalPadding: -25, // to align with the widget vertically
+            horizontalPadding: 0, // Aligns the popup with the triggering widget horizontally
+            verticalPadding: -25, // Adjusts vertical position of the popup
             onOpened: () {
-              print('Overlay popup opened');
+              print('Overlay popup opened'); // Prints message when popup is opened
             },
-            blurBackground: false,
-            child: const Icon(Icons.info),
+            blurBackground: false, // No blur effect in the background
+            child: const Icon(Icons.info), // The Icon that triggers the popup
           ),
+
           const SizedBox(height: 20),
 
-          // OverlayPopup with blur background
+          // OverlayPopup with a blurred background
           OverlayPopup(
             content: (closeOverlay) => Container(
-              padding: const EdgeInsets.all(20),
-              color: Colors.white,
+              padding: const EdgeInsets.all(20), // Padding around popup content
+              color: Colors.white, // Background color of the popup
               child: Column(
                 children: [
                   const Text('This is an overlay popup'),
                   const SizedBox(height: 20),
                   ElevatedButton(
-                    onPressed: closeOverlay,
+                    onPressed: closeOverlay, // Close button for popup
                     child: const Text('Close'),
                   ),
                 ],
               ),
             ),
-            horizontalPadding: -10, // to align with the widget horizontally
-            verticalPadding: -50, // to align with the widget vertically
+            horizontalPadding: -10, // Adjusts the popup position horizontally
+            verticalPadding: -50, // Adjusts the popup position vertically
             onOpened: () {
-              print('Overlay popup opened');
+              print('Overlay popup opened'); // Prints when the popup is opened
             },
-            blurBackground: true,
-            blurOpacity: 0.5,
+            blurBackground: true, // Enables blurred background behind the popup
+            blurOpacity: 0.5, // Sets the opacity of the blur effect
             child: Container(
-              height: 50,
-              width: 300,
+              height: 50, // Height of the triggering widget
+              width: 300, // Width of the triggering widget
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(10), // Rounded corners for the widget
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: const Offset(0, 3),
+                    color: Colors.grey.withOpacity(0.5), // Shadow color with opacity
+                    spreadRadius: 5, // Spread of the shadow
+                    blurRadius: 7, // Blur radius for the shadow
+                    offset: const Offset(0, 3), // Shadow offset
                   ),
                 ],
-                border: Border.all(color: Colors.grey.withOpacity(0.5)),
+                border: Border.all(color: Colors.grey.withOpacity(0.5)), // Border around the widget
               ),
               child: const Center(
                   child: Text('Overlay Popup With Blur Background')),
             ),
           ),
+
           const SizedBox(height: 20),
 
-          // OverlayPopup without blur background
+          // OverlayPopup without a blurred background
           OverlayPopup(
             content: (closeOverlay) => Container(
-              padding: const EdgeInsets.all(20),
-              color: Colors.white,
+              padding: const EdgeInsets.all(20), // Adds padding to popup content
+              color: Colors.white, // Popup background color
               child: Column(
                 children: [
                   const Text('This is an overlay popup'),
                   const SizedBox(height: 20),
                   ElevatedButton(
-                    onPressed: closeOverlay,
+                    onPressed: closeOverlay, // Button to close the popup
                     child: const Text('Close'),
                   ),
                 ],
               ),
             ),
-            horizontalPadding: -10, // to align with the widget horizontally
-            verticalPadding: -50, // to align with the widget vertically
+            horizontalPadding: -10, // Aligns the popup horizontally
+            verticalPadding: -50, // Aligns the popup vertically
             onOpened: () {
-              print('Overlay popup opened');
+              print('Overlay popup opened'); // Logs popup opened event
             },
-            blurBackground: false,
+            blurBackground: false, // No background blur
             child: Container(
-              height: 50,
-              width: 300,
+              height: 50, // Height of the triggering widget
+              width: 300, // Width of the triggering widget
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(10), // Rounded corners
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: const Offset(0, 3),
+                    color: Colors.grey.withOpacity(0.5), // Shadow with opacity
+                    spreadRadius: 5, // Shadow spread radius
+                    blurRadius: 7, // Shadow blur radius
+                    offset: const Offset(0, 3), // Shadow offset
                   ),
                 ],
-                border: Border.all(color: Colors.grey.withOpacity(0.5)),
+                border: Border.all(color: Colors.grey.withOpacity(0.5)), // Border around widget
               ),
               child: const Center(
                   child: Text('Overlay Popup Without Blur Background')),
             ),
           ),
-          const SizedBox(height: 20),
         ],
       ),
     );
