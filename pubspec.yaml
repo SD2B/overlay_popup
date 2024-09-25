@@ -1,6 +1,6 @@
 name: custom_overlay_popup
 description: "A customizable popup that can be called on the widget of your choice."
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/SD2B/overlay_popup.git
 
 environment:
