@@ -40,7 +40,8 @@ class OverlayPopupExample extends StatelessWidget {
           // OverlayPopup with an Icon as trigger
           OverlayPopup(
             content: (closeOverlay) => Container(
-              padding: const EdgeInsets.all(20), // Adds padding to the popup content
+              padding:
+                  const EdgeInsets.all(20), // Adds padding to the popup content
               color: Colors.white, // Background color of the popup
               child: Column(
                 children: [
@@ -53,10 +54,12 @@ class OverlayPopupExample extends StatelessWidget {
                 ],
               ),
             ),
-            horizontalPadding: 0, // Aligns the popup with the triggering widget horizontally
+            horizontalPadding:
+                0, // Aligns the popup with the triggering widget horizontally
             verticalPadding: -25, // Adjusts vertical position of the popup
             onOpened: () {
-              print('Overlay popup opened'); // Prints message when popup is opened
+              print(
+                  'Overlay popup opened'); // Prints message when popup is opened
             },
             blurBackground: false, // No blur effect in the background
             child: const Icon(Icons.info), // The Icon that triggers the popup
@@ -92,16 +95,20 @@ class OverlayPopupExample extends StatelessWidget {
               width: 300, // Width of the triggering widget
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(10), // Rounded corners for the widget
+                borderRadius:
+                    BorderRadius.circular(10), // Rounded corners for the widget
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.5), // Shadow color with opacity
+                    color: Colors.grey
+                        .withOpacity(0.5), // Shadow color with opacity
                     spreadRadius: 5, // Spread of the shadow
                     blurRadius: 7, // Blur radius for the shadow
                     offset: const Offset(0, 3), // Shadow offset
                   ),
                 ],
-                border: Border.all(color: Colors.grey.withOpacity(0.5)), // Border around the widget
+                border: Border.all(
+                    color: Colors.grey
+                        .withOpacity(0.5)), // Border around the widget
               ),
               child: const Center(
                   child: Text('Overlay Popup With Blur Background')),
@@ -113,7 +120,8 @@ class OverlayPopupExample extends StatelessWidget {
           // OverlayPopup without a blurred background
           OverlayPopup(
             content: (closeOverlay) => Container(
-              padding: const EdgeInsets.all(20), // Adds padding to popup content
+              padding:
+                  const EdgeInsets.all(20), // Adds padding to popup content
               color: Colors.white, // Popup background color
               child: Column(
                 children: [
@@ -146,7 +154,9 @@ class OverlayPopupExample extends StatelessWidget {
                     offset: const Offset(0, 3), // Shadow offset
                   ),
                 ],
-                border: Border.all(color: Colors.grey.withOpacity(0.5)), // Border around widget
+                border: Border.all(
+                    color:
+                        Colors.grey.withOpacity(0.5)), // Border around widget
               ),
               child: const Center(
                   child: Text('Overlay Popup Without Blur Background')),
