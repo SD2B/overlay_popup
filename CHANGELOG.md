@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.0.8] 
+- **Added**: Comprehensive documentation for public API elements to improve usability and score on pub.dev.
+- **Improved**: Code readability by refactoring and adding comments.
+- **Fixed**: Overlay positioning issues when used in multi-window applications.
+- **Fixed**: A bug where the popup would remain open when navigating to a new route.
+
 ## [0.0.7] 
 - **Added**: Support for custom popup transitions and animations for smoother UI interactions.
 - **Improved**: Performance optimizations to reduce lag when displaying and hiding the popup.
