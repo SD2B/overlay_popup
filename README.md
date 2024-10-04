@@ -96,4 +96,20 @@ class MyApp extends StatelessWidget {
 - **Blur Effect**: The `blurBackground` feature can enhance user experience by adding focus to the popup while dimming the rest of the UI.
 
 
+---
+
+
+## Author
+
+Developed with ❤️ by [Sanoop Das](https://codelife.in). Connect with me on [LinkedIn](https://www.linkedin.com/in/sd2b/).
+
+---
+
+## Support
+
+If you like this package, please give it a ⭐ on [pub.dev](https://pub.dev/packages/custom_overlay_popup) and share it with the Flutter community!
+
+---
+
+Happy Coding!
 

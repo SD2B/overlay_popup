@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.0.9] - 2024-10-04
+- Added LinkedIn profile link.
+
 ## [0.0.8] 
 - **Added**: Comprehensive documentation for public API elements to improve usability and score on pub.dev.
 - **Improved**: Code readability by refactoring and adding comments.
